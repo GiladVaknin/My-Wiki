@@ -14,7 +14,7 @@
   margin: auto;
   font-family: fantasy;
 }
-#navbar ul {
+ul {
   list-style: none;
   display: inline-flex;
   text-transform: uppercase;
@@ -75,4 +75,37 @@ a {
   font-family: fantasy;
   text-align: center;
   font-size: larger;
+}
+.fa {
+  padding: 20px;
+  text-align: center;
+  margin: 5px 2px;
+  font-size: 30px;
+  width: 70px;
+}
+.fa-facebook {
+  background: #00defc;
+  color: black;
+}
+.fa-instagram {
+  background: #888383;
+  color: black;
+}
+.fa-youtube {
+  background: #888383;
+  color: rgb(3, 3, 3);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #00defc;
+  padding: 10px;
+}
+
+#grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 170, 162, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
