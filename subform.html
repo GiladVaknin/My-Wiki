@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
   </head>
   <body>
     <div>
@@ -23,25 +24,37 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="aboutme.html">ABOUT ME</a></li>
+            <img src="logoarte.jpg" width="220px" height="130px" />
             <li><a href="track.html">My TRACKS</a></li>
-            <li><a href="subform.html">CONtact me</a></li>
+            <li><a href="subform.html"style="color: rgb(101, 67, 252);">CONtact me</a></li>
           </ul>
         </nav>
       </div>
       <div id="subform">
-        <h1>Contact Options</h1>
-        <h2>You can fill your details here and I'll talk with you soon.</h2>
+        <h1>Get in touch with me!</h1>
+       <h2 style=" color: MediumPurple;">Contact us for a free no-obligation appointment.</h2>
         <label for="name"><h2>Name</h2></label>
         <input type="text" placeholder="Enter Your Name" />
         <label><h2>E-mail</h2></label>
         <input type="email" placeholder="Enter Your Email Adress" />
-        <input type="submit" value="Submit" style="margin-top: 10px" />
+        <label><h2>Phone</h2></label>
+        <input type="text" placeholder="Enter Your Phone Number" />
+        <label for="event"><h2>Event type:</h2></label>
+        <select name="event" >
+          <option value="party">Party</option>
+          <option value="birthday">Birthday</option>
+          <option value="wedding">Wedding</option>
+          <option value="other">other</option>
+        </select>
+        <label for="questions"></label>
+       <textarea  name="questions" placeholder="If you have specials request or any other questions you can write them here." rows="5" cols="50"
+       ></textarea>
+        <input type="submit" value="Submit" style="margin-top:30px; color: rgb(255, 102, 209); font-family: 'Aldrich';" />
         <br /><br />
       </div>
-      <ul class="grid-container">
+      <!-- <ul class="smnavbar">
         <li>
           <a
-            id="grid-item"
             href="https://www.facebook.com/profile.php?id=100020629268053"
             class="fa fa-facebook"
             target="_blank"
@@ -49,7 +62,6 @@
         </li>
         <li>
           <a
-            id="grid-item"
             href="https://www.instagram.com/harel__vaknin/"
             class="fa fa-instagram"
             target="_blank"
@@ -57,7 +69,6 @@
         </li>
         <li>
           <a
-            id="grid-item"
             href="https://www.youtube.com/channel/UCtORi8rgjXjLKTPRSrNZeOw"
             class="fa fa-youtube"
             target="_blank"
@@ -65,6 +76,6 @@
         </li>
         <li></li>
       </ul>
-    </div>
+    </div> -->
   </body>
 </html>
