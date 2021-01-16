@@ -27,6 +27,12 @@ ul {
 }
 a {
   color: white;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+#navbar img {
+  width: 220px;
+  height: 130px;
 }
 a:hover {
   color: rgb(101, 67, 252);
@@ -35,12 +41,20 @@ a:hover {
   height: 100vh;
   margin-top: 0;
   margin-bottom: 0;
-  background-image: url("artebg.JPG");
+  background-image: url("newbg.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
-  background-color: white;
+  background-color: black;
+}
+@keyframes fade {
+  from {
+    color: rgb(66, 224, 230);
+  }
+  to {
+    color: white;
+  }
 }
 .video {
   align-items: center;
@@ -48,25 +62,32 @@ a:hover {
   display: flex;
   border: 2px solid rgb(101, 67, 252);
   margin-top: 100px;
+  width: 60%;
+  height: 80%;
 }
 .aboutme {
   color: white;
   font-size: 35px;
   /* border: 3px solid white; */
-  margin-top: 200px;
+  margin-top: 150px;
   text-align: center;
   font-family: fantasy;
+  width: 85%;
 }
 .aboutme u {
   color: rgb(255, 102, 209);
 }
 .aboutme img {
   border: 2px solid rgb(101, 67, 252);
+  height: 600px;
+  width: 550px;
 }
 .aboutme h1 {
   color: MediumPurple;
   font-family: "Aldrich";
   font-weight: bolder;
+  font-size: 70px;
+  padding-bottom: 20px;
 }
 
 #subform {
@@ -103,6 +124,7 @@ a:hover {
   font-family: fantasy;
   text-align: center;
   font-size: larger;
+  width: 70%;
 }
 #subform select {
   margin: auto;
@@ -115,42 +137,98 @@ a:hover {
 }
 .tracks {
   margin-top: 200px;
+  height: 75vh;
 }
 
 label {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.fa {
-  padding: 20px;
-  text-align: center;
-  margin: 5px 2px;
-  font-size: 30px;
-  width: 70px;
+@media (max-width: 1024px) {
+  #navbar li {
+    font-size: 20px;
+  }
+  #navbar img {
+    width: 180px;
+    height: 100px;
+  }
 }
-.fa-facebook {
-  background: #00defc;
-  color: black;
+@media (max-width: 700px) {
+  #navbar li {
+    font-size: 15px;
+  }
+  #navbar img {
+    width: 120px;
+    height: 80px;
+  }
+  .aboutme {
+    font-size: 20px;
+  }
+  .aboutme h1 {
+    font-size: 50px;
+  }
 }
-.fa-instagram {
-  background: #888383;
-  color: black;
+@media (max-width: 500px) {
+  #navbar li {
+    font-size: 10px;
+  }
+  #navbar img {
+    width: 90px;
+    height: 50px;
+  }
 }
-.fa-youtube {
-  background: #888383;
-  color: rgb(3, 3, 3);
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #00defc;
-  padding: 10px;
+@media (max-height: 750px) {
+  .aboutme img {
+    height: 300px;
+  }
+  .aboutme {
+    font-size: 20px;
+  }
+  .aboutme h1 {
+    font-size: 40px;
+  }
 }
 
-#grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 170, 162, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+.container2 {
+  display: grid;
+  width: 100%;
+  position: relative;
+  grid-template-columns: 17vw 22vw 22vw 22vw 17vw;
+  grid-template-rows: 50vh;
+  padding-top: 20px;
+}
+.aboutgrid {
+  grid-column: 2/3;
+  font-family: "Aldrich";
+}
+
+.trackgrid {
+  grid-column: 3/4;
+  font-family: "Aldrich";
+}
+
+.contactgrid {
+  grid-column: 4/5;
+  font-family: "Aldrich";
+}
+.social-media-navbar {
+  grid-column: 1/2;
+}
+.social-media-navbar ul {
+  flex-direction: column;
+}
+.nav-link:hover i.fa-facebook-f {
+  color: #3b5998;
+}
+.nav-link:hover i.fa-twitter {
+  color: #1da1f2;
+}
+.nav-link:hover i.fa-google {
+  color: red;
+}
+.nav-link:hover i.fa-github {
+  color: purple;
+}
+.nav-link {
+  font-size: 3.6rem;
 }
