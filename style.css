@@ -153,41 +153,6 @@ label {
     height: 100px;
   }
 }
-@media (max-width: 700px) {
-  #navbar li {
-    font-size: 15px;
-  }
-  #navbar img {
-    width: 120px;
-    height: 80px;
-  }
-  .aboutme {
-    font-size: 20px;
-  }
-  .aboutme h1 {
-    font-size: 50px;
-  }
-}
-@media (max-width: 500px) {
-  #navbar li {
-    font-size: 10px;
-  }
-  #navbar img {
-    width: 90px;
-    height: 50px;
-  }
-}
-@media (max-height: 750px) {
-  .aboutme img {
-    height: 300px;
-  }
-  .aboutme {
-    font-size: 20px;
-  }
-  .aboutme h1 {
-    font-size: 40px;
-  }
-}
 
 .container2 {
   display: grid;
@@ -201,15 +166,24 @@ label {
   grid-column: 2/3;
   font-family: "Aldrich";
 }
+.aboutgrid:hover {
+  border: 1px solid rgb(66, 224, 230);
+}
 
 .trackgrid {
   grid-column: 3/4;
   font-family: "Aldrich";
 }
+.trackgrid:hover {
+  border: 1px solid rgb(66, 224, 230);
+}
 
 .contactgrid {
   grid-column: 4/5;
   font-family: "Aldrich";
+}
+.contactgrid:hover {
+  border: 1px solid rgb(66, 224, 230);
 }
 .social-media-navbar {
   grid-column: 1/2;
@@ -230,5 +204,62 @@ label {
   color: purple;
 }
 .nav-link {
-  font-size: 3.6rem;
+  font-size: 3rem;
+}
+
+@media (max-width: 700px) {
+  #navbar li {
+    font-size: 15px;
+  }
+  #navbar img {
+    width: 120px;
+    height: 80px;
+  }
+  .aboutme {
+    font-size: 20px;
+  }
+  .aboutme h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 550px) {
+  #navbar li {
+    font-size: 10px;
+  }
+  #navbar img {
+    width: 90px;
+    height: 50px;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+@media (max-height: 750px) {
+  .aboutme img {
+    height: 300px;
+  }
+  .aboutme {
+    font-size: 20px;
+  }
+  .aboutme h1 {
+    font-size: 40px;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  /* #navbar ul {
+    flex-direction: column;
+  } */
+  #navbar img {
+    width: 0px;
+    height: 0px;
+  }
+}
+@media (max-width: 380px) {
+  #navbar ul {
+    flex-direction: column;
+    right: 0;
+  }
 }
